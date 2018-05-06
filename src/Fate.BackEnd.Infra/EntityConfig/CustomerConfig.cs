@@ -1,4 +1,5 @@
 ﻿using Fate.BackEnd.Domain.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
 namespace Fate.BackEnd.Infra.EntityConfig
@@ -8,6 +9,8 @@ namespace Fate.BackEnd.Infra.EntityConfig
         public CustomerConfig()
         {
             HasKey(c => c.Id);
+            Property(c => c.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             Property(c => c.Name)
                 .IsRequired()

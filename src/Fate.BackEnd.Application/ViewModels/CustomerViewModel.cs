@@ -1,18 +1,17 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace Fate.BackEnd.Domain.Models
+namespace Fate.BackEnd.Application.ViewModels
 {
-    public class Customer : Entity
+    public class CustomerViewModel : EntityViewModel
     {
         public string Name { get; set; }
         public string LastName { get; set; }
         public string CPF { get; set; }
         public DateTime Birthday { get; set; }
         public int Age { get; set; }
-
         public int? OccupationId { get; set; }
-        public Occupation Occupation { get; set; }
 
-        public Customer() { }
+        public OccupationViewModel Occupation { get; set; }
     }
 }

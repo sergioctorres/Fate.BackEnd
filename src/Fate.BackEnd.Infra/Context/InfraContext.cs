@@ -7,7 +7,7 @@ namespace Fate.BackEnd.Infra.Context
 {
     public class InfraContext : DbContext
     {
-        public InfraContext() //: base("")
+        public InfraContext() : base("DefaultConnection")
         {
 
         }
