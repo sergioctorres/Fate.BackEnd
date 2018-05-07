@@ -23,9 +23,11 @@ namespace Fate.BackEnd.Infra.CrossCutting.IoC
 
             // App
             container.Register<ICustomerAppService, CustomerAppService>(Lifestyle.Scoped);
+            container.Register<IOccupationAppService, OccupationAppService>(Lifestyle.Scoped);
 
             // Data
             container.Register<ICustomerRepository, CustomerRepository>(Lifestyle.Scoped);
+            container.Register<IOccupationRepository, OccupationRepository>(Lifestyle.Scoped);
             container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
             container.Register<InfraContext>(Lifestyle.Scoped);
         }

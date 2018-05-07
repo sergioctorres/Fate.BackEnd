@@ -1,12 +1,6 @@
 ﻿using Fate.BackEnd.Application.Interfaces;
 using Fate.BackEnd.Application.ViewModels;
-using Fate.BackEnd.Domain.Models;
-using Fate.BackEnd.Infra.Repository;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace Fate.BackEnd.Services.REST.Controllers
@@ -19,7 +13,6 @@ namespace Fate.BackEnd.Services.REST.Controllers
         {
             _customerAppService = customerAppService;
         }
-
 
         [HttpGet]
         public IEnumerable<CustomerViewModel> GetAll()

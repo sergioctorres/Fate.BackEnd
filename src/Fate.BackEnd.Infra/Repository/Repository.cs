@@ -1,9 +1,11 @@
 ﻿using Fate.BackEnd.Domain.Interfaces;
 using Fate.BackEnd.Domain.Models;
 using Fate.BackEnd.Infra.Context;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Fate.BackEnd.Infra.Repository
 {

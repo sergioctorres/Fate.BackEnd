@@ -9,7 +9,9 @@ namespace Fate.BackEnd.Infra.Context
     {
         public InfraContext() : base("DefaultConnection")
         {
-
+            Configuration.ProxyCreationEnabled = false;
+            Configuration.LazyLoadingEnabled = false;
+            Configuration.AutoDetectChangesEnabled = false;
         }
 
         public DbSet<Customer> Customers { get; set; }

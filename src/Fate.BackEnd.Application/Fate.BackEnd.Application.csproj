@@ -48,8 +48,10 @@
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Interfaces\ICustomerAppService.cs" />
+    <Compile Include="Interfaces\IOccupationAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CustomerAppService.cs" />
+    <Compile Include="Services\OccupationAppService.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
     <Compile Include="ViewModels\EntityViewModel.cs" />
     <Compile Include="ViewModels\OccupationViewModel.cs" />

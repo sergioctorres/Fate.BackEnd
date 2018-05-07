@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Fate.BackEnd.Domain.Models
 {
@@ -11,8 +12,7 @@ namespace Fate.BackEnd.Domain.Models
         public int Age { get; set; }
 
         public int? OccupationId { get; set; }
-        public Occupation Occupation { get; set; }
 
-        public Customer() { }
+        public virtual Occupation Occupation { get; set; }
     }
 }
